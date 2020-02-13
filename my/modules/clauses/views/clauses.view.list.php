@@ -23,7 +23,7 @@ if (! defined('DIAFAN'))
 }
 
 echo '<div class="clauses_list">';
-
+echo '<div class="flexStart">';
 //описание текущей категории
 if (! empty($result["text"]))
 {
@@ -233,6 +233,8 @@ if (! empty($result["rows"]))
 		echo '</div>';
 	}
 }
+
+echo '</div>';
 
 //постраничная навигация
 if (! empty($result["paginator"]))

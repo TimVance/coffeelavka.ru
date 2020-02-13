@@ -108,6 +108,7 @@ if ($result["row"]["price_arr"])
 			echo '<div class="shop_old_price">' . $this->diafan->_('Старая цена') . ': <span class="shop_price_value">' . $price["old_price"] . '</span>'
 			. ' <span class="shop_price_currency">' . $result["result"]["currency"] . '</span></div>';
 		}
+
 		if (! $price["count"] || empty($price["price_no_format"]) && ! $result['result']["buy_empty_price"] || $result["row"]["no_buy"])
 		{
 			echo '<div class="js_shop_no_buy shop_no_buy">' . $this->diafan->_('Товар временно отсутствует') . '</div>';

@@ -43,12 +43,12 @@ if(is_array($compress_files))
 {
 	foreach($compress_files as $file)
 	{
-		echo '<link href="'.BASE_PATH.$file.'" rel="stylesheet" type="text/css">';
+		echo '<link href="'.BASE_PATH.$file.'?v=1" rel="stylesheet" type="text/css">';
 	}
 }
 else
 {
-	echo '<link href="'.BASE_PATH.$compress_files.'" rel="stylesheet" type="text/css">';
+	echo '<link href="'.BASE_PATH.$compress_files.'?v=1" rel="stylesheet" type="text/css">';
 }
 
 if ($this->diafan->_users->useradmin)

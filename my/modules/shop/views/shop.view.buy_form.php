@@ -72,6 +72,9 @@ if ($result["row"]["price_arr"])
 			{
 				echo '<span class="shop_old_price price-old"><span class="shop_price_value strike">'.$price["old_price"].' '.$result["result"]["currency"].'</span></span>';
 			}
+            else {
+                echo '<div class="shop_old_price">&nbsp;</div>';
+            }
 			if (! $price["count"] && empty($hide_submit) || empty($price["price_no_format"]) && ! $result['result']["buy_empty_price"])
 			{
 				echo '<span class="js_shop_no_buy shop_no_buy">'.$this->diafan->_('Товар временно отсутствует').'</span>';

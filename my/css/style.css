@@ -1159,3 +1159,40 @@ a.subscribe-button {
  .open2 > a::after {
   transform: rotate(90deg);
  }
+.flexStart {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.clauses_list .block {
+    text-align: center;
+    border: 1px solid #ddd;
+    width: calc(100% / 3 - 20px);
+    padding: 20px;
+    -webkit-transition: border .3s;
+    -moz-transition: border .3s;
+    -ms-transition: border .3s;
+    -o-transition: border .3s;
+    transition: border .3s;
+    margin: 10px;
+}
+.clauses_list .block:hover {
+    border: 1px solid #999;
+}
+
+#sync2 .owl-item img {
+    max-width: 90px;
+    height: auto;
+}
+
+@media screen and (max-width: 760px){
+    .clauses_list .block {
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .clauses_list .block {
+        width: calc(100% - 20px);
+    }
+}

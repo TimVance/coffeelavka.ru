@@ -29,14 +29,14 @@ foreach ($result["categories"] as $cat_id => $cat)
 	echo '<div class="clauses_list">';
 
 	//название категории
-	echo '<div class="block_header">'.$cat["name"];
+	//echo '<div class="block_header">'.$cat["name"];
 
 	//рейтинг категории
-	if (! empty($cat["rating"]))
-	{
-		echo $cat["rating"];
-	}
-	echo '</div>';
+//	if (! empty($cat["rating"]))
+//	{
+//		echo $cat["rating"];
+//	}
+//	echo '</div>';
 
 	//изображения категории
 	if (! empty($cat["img"]))
@@ -116,6 +116,7 @@ foreach ($result["categories"] as $cat_id => $cat)
 			//статьи подкатегории
 			if (! empty($child["rows"]))
 			{
+			    echo '<div class="flexStart">';
 				foreach ($child["rows"] as $row)
 				{
 					echo '<div class="block">';
@@ -174,6 +175,7 @@ foreach ($result["categories"] as $cat_id => $cat)
 
 					echo '</div>';
 				}
+				echo '</div>';
 			}
 			echo '</div>';
 		}
@@ -182,6 +184,7 @@ foreach ($result["categories"] as $cat_id => $cat)
 	//статьи в категории
 	if ($cat["rows"])
 	{
+        echo '<div class="flexStart">';
 		foreach ($cat["rows"] as $row)
 		{
 			echo '<div class="block">';
@@ -240,6 +243,7 @@ foreach ($result["categories"] as $cat_id => $cat)
 
 			echo '</div>';
 		}
+        echo '</div>';
 	}
 
 	//ссылка на все статьи в категории
