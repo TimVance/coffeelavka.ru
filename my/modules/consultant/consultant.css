@@ -1,0 +1,151 @@
+/**
+ * Оформление on-line консультанта системы RedHelper
+ * 
+ * @package    DIAFAN.CMS
+ * @author     diafan.ru
+ * @version    6.0
+ * @license    http://www.diafan.ru/license.html
+ * @copyright  Copyright (c) 2003-2016 OOO «Диафан» (http://www.diafan.ru/)
+ */
+.redhlp_button_diafan_left{
+	width: 34px;
+	height: 124px;
+	position: fixed;
+	top: 200px;
+	left: 0;
+	z-index: 1;
+}
+.redhlp_button_diafan_left span{
+	width: 34px;
+	height: 124px;
+	position: fixed;
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	z-index: 2;
+}
+
+.redhlp_button_diafan_left span.online{
+	background: url(img/big_online_left.png) no-repeat 0 50% #7b9408;
+}
+.redhlp_button_diafan_left span.offline{
+	background: url(img/big_offline_left.png) no-repeat 0 50% #7b9408;
+}
+
+.redhlp_button_diafan_top{
+	width: 124px;
+	height: 34px;
+	position: fixed;
+	top: 0;
+	left: 200px;
+	z-index: 1;
+}
+.redhlp_button_diafan_top span{
+	width: 124px;
+	height: 34px;
+	position: fixed;
+	border-radius: 0 0 3px 3px;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	z-index: 2;
+}
+.redhlp_button_diafan_top span.offline{
+	background: url(img/big_offline_top.png) no-repeat 50% 0 #7b9408;
+}
+
+.redhlp_button_diafan_top span.online{
+	background: url(img/big_online_top.png) no-repeat 50% 0 #7b9408;
+}
+
+.redhlp_button_diafan_right{
+	width: 34px;
+	height: 124px;
+	position: fixed;
+	top: 200px;
+	right: 0;
+}
+.redhlp_button_diafan_right span{
+	width: 34px;
+	height: 124px;
+	position: fixed;
+	border-radius: 3px 0 0 3px;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.redhlp_button_diafan_right span.offline{
+	background: url(img/big_offline_right.png) no-repeat 2px 50% #7b9408;
+}
+
+.redhlp_button_diafan_right span.online{
+	background: url(img/big_online_right.png) no-repeat 2px 50% #7b9408;
+}
+
+
+.redhlp_button_diafan_left_small{
+	width: 22px;
+	height: 124px;
+	position: fixed;
+	top: 200px;
+	left: 0;
+}
+.redhlp_button_diafan_left_small span{
+	width: 22px;
+	height: 124px;
+	position: fixed;
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.redhlp_button_diafan_left_small span.offline{
+	background: url(img/small_offline_left.png) no-repeat 0 50% #7b9408;
+}
+
+.redhlp_button_diafan_left_small span.online{
+	background: url(img/small_online_left.png) no-repeat 0 50% #7b9408;
+}
+
+.redhlp_button_diafan_top_small{
+	width: 124px;
+	height: 22px;
+	position: fixed;
+	top: 0;
+	left: 200px;
+}
+.redhlp_button_diafan_top_small span{
+	width: 124px;
+	height: 22px;
+	position: fixed;
+	border-radius: 0 0 3px 3px;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.redhlp_button_diafan_top_small span.offline{
+	background: url(img/small_offline_top.png) no-repeat 50% 0 #7b9408;
+}
+
+.redhlp_button_diafan_top_small span.online{
+	background: url(img/small_online_top.png) no-repeat 50% 0 #7b9408;
+}
+
+.redhlp_button_diafan_right_small{
+	width: 22px;
+	height: 124px;
+	position: fixed;
+	top: 200px;
+	right: 0;
+}
+.redhlp_button_diafan_right_small span{
+	width: 22px;
+	height: 124px;
+	position: fixed;
+	border-radius: 3px 0 0 3px;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.redhlp_button_diafan_right_small span.offline{
+	background: url(img/small_offline_right.png) no-repeat 2px 50% #7b9408;
+}
+
+.redhlp_button_diafan_right_small span.online{
+	background: url(img/small_online_right.png) no-repeat 2px 50% #7b9408;
+}

@@ -1,0 +1,191 @@
+#mob_prod {
+	margin-top: 20px;
+}
+#mob_prod .line1 {
+   height: 117px;
+   margin-bottom: 5px;
+}
+#mob_prod .line1 > div {
+	display: inline-block;
+	border: 1px solid #000;
+}
+#mob_prod > .line1 > #rio {
+	width: 69%;
+	position: relative;
+	float: left;
+	height: 117px;
+}
+#mob_prod #rio span {
+	font-family: "BebasNeue Bold";
+   font-size: 23px;
+	position: absolute;
+	left: 53%;
+   top: 36px;
+   text-align: center;
+   line-height: 25px;
+}
+#mob_prod > .line1 > #tea_list {
+	width: 30%;
+	position: relative;
+	float: right;
+	height: 117px;
+}
+#mob_prod #tea_list span {
+	font-family: "BebasNeue Bold";
+   font-size: 22px;
+   position: absolute;
+	left: 58%;
+   top: 10px;
+   text-align: center;
+   line-height: 30px;
+}
+#mob_prod .line2 {
+	height: 313px;
+	margin-bottom: 5px;
+}
+#mob_prod .line2 > div {
+	display: inline-block;
+}
+#mob_prod .line2_left > #coffe {
+   width: 100%;
+   position: relative;
+   height: 153px;
+   margin-bottom: 5px;
+}
+#mob_prod .line2_left > #chock {
+	width: 100%;
+	position: relative;
+   height: 154px;
+}
+#mob_prod .line2_left > #chock span {
+   font-family: "BebasNeue Bold";
+	font-size: 129%;
+   position: absolute;
+	left: 6%;
+   top: 15px;
+   text-align: center;
+   line-height: 29px;
+}
+#mob_prod #coffe span {
+	font-family: "BebasNeue Bold";
+   position: absolute;
+	font-size: 107%;
+	left: 53%;
+   top: 15px;
+   text-align: center;
+   line-height: 23px;
+}
+#mob_prod .line2_left > div {
+	display: inline-block;
+	border: 1px solid #000;
+}
+#mob_prod .line2_left {
+	width: 38%;
+   height: 290px;
+   float: left;
+}
+#mob_prod .line2_right {
+	width: 61%;
+	float: right;
+}
+#mob_prod .line2_right div {
+	border: 1px solid #000;
+}
+#mob_prod .line2_right #matcha {
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+   height: 114px;
+   margin-bottom: 6px;
+}
+#mob_prod .line2_right #matcha span {
+   font-family: "BebasNeue Bold";
+   font-size: 23px;
+   position: absolute;
+	left: 44%;
+   top: 38px;
+   text-align: center;
+   line-height: 23px;
+}
+#mob_prod .line2_right #matcha img {
+	width: 100%;
+}
+#mob_prod .line2_right #akses {
+	width: 100%;
+   position: relative;
+   height: 107px;
+	margin-bottom: 7px;
+}
+#mob_prod .line2_right #akses span {
+	font-family: "BebasNeue Bold";
+   font-size: 25px;
+   position: absolute;
+	left: 47%;
+   top: 33px;
+   text-align: center;
+   line-height: 47px;
+}
+#mob_prod .line2_right #akses img {
+	width: 100%;
+   position: relative;
+}
+#mob_prod .line2_right #oborud {
+	width: 100%;
+	height: 77px;
+	position: relative
+}
+#mob_prod .line2_right #oborud span {
+   font-family: "BebasNeue Bold";
+   font-size: 16px;
+   position: absolute;
+	left: 45%;
+   top: 23px;
+   text-align: center;
+   line-height: 16px;
+	}
+#mob_prod .line2_right #oborud img {
+	width: 100%;
+}
+#mob_prod .line3 {
+	height: 98px;
+}
+#mob_prod .line3 > div {
+	display: inline-block;
+	border: 1px solid #000;
+}
+#mob_prod > .line3 > #djez {
+	width: 65%;
+   position: relative;
+   float: left;
+   height: 98px;
+}
+#mob_prod > .line3 > #djez span {
+   font-family: "BebasNeue Bold";
+   font-size: 25px;
+   position: absolute;
+   left: 126px;
+   top: 37px;
+   text-align: center;
+   line-height: 29px;
+}
+#mob_prod > .line3 > #sirop {
+   width: 33%;
+   position: relative;
+   float: right;
+   height: 98px;;
+}
+#mob_prod > .line3 > #sirop span {
+   font-family: "BebasNeue Bold";
+   font-size: 20px;
+   position: absolute;
+	left: 45%;
+   top: 11px;
+   text-align: center;
+   line-height: 29px;
+}
+#mob_img {
+	margin-left: -5px;
+}
+#mob_img img {
+	width: 101%;
+}

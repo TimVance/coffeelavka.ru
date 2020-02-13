@@ -1,0 +1,198 @@
+@font-face {
+ font-family: "BebasNeue Bold";
+ src: url("../fonts/BebasNeue Bold.otf"),
+      url("/fonts/BebasNeue Bold.ttf");
+}
+@font-face {
+ font-family: "BebasNeue Book";
+ src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+      url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+@font-face {
+ font-family: "BebasNeue Light";
+ src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+      url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+@font-face {
+ font-family: "BebasNeue Regular";
+ src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+      url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+@font-face {
+ font-family: "BebasNeue Thin";
+ src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+      url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+#cat_prod div div {
+	position: relative;
+}
+#cat_prod div span{
+	color: #000;
+}
+#cat_prod {
+	 margin-top: 30px;
+    overflow: hidden;
+    height: 570px;
+    padding-top: 18px;
+}
+#cat_prod img {
+	width: 100%;
+}
+#coffe {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	margin-bottom: 15px;
+}
+#coffe span{
+	font-family: "BebasNeue Bold";
+	font-size: 30px;
+	position: absolute;
+	left: 132px;
+	top: 41px;
+	text-align: center;
+	line-height: 31px;
+}
+#tea_list span{
+	font-family: "BebasNeue Bold";
+	font-size: 27px;
+	position: absolute;
+	left: 131px;
+	top: 21px;
+	text-align: center;
+	line-height: 30px;
+}
+#prod_left {
+	width: 26.7%;
+	float: left;
+}
+#prod_left div {
+	border: 1px solid #000;
+}
+#prod_right {
+	float: right;
+	width: 73.3%;
+}
+#prod_right div{
+	/*display: inline-block;*/
+}
+#prod_right div div{
+	display: inline-block;
+	float: right;
+	margin-left: 14px;
+	border: 1px solid #000;
+}
+.line1 {
+	height: 145px;
+}
+.line1 div{
+	height: 140px;
+}
+#matcha {
+	position: relative;
+	width: 47%;
+}
+#matcha span{
+	font-family: "BebasNeue Bold";
+	font-size: 26px;
+	position: absolute;
+	left: 160px;
+	top: 46px;
+	text-align: center;
+	line-height: 29px;
+}
+#chock {
+	width: 22%;
+}
+#chock span{
+	font-family: "BebasNeue Bold";
+	font-size: 22px;
+	position: absolute;
+	left: 11px;
+	top: 10px;
+	text-align: center;
+	line-height: 29px;
+}
+#oborud {
+	width: 25%;
+}
+#oborud span{
+	font-family: "BebasNeue Bold";
+	font-size: 13px;
+	position: absolute;
+	left: 101px;
+	top: 20px;
+	text-align: center;
+	line-height: 14px;
+}
+.line2 {
+	height: 217px;
+}
+#akses {
+	width: 29%;
+}
+#akses span{
+	font-family: "BebasNeue Bold";
+	font-size: 28px;
+	position: absolute;
+	left: 6px;
+	top: 7px;
+	text-align: center;
+	line-height: 47px;
+}
+#rio {
+	width: 67%;
+}
+#rio span{
+	font-family: "BebasNeue Bold";
+	font-size: 44px;
+	position: absolute;
+	left: 257px;
+	top: 64px;
+	text-align: center;
+	line-height: 47px;
+}
+.line3 {
+	height: 168px;
+}
+.line3 div{
+	height: 168px;
+}
+#sirop {
+	width: 38%;
+	height: 168px;
+}
+#sirop span{
+	font-family: "BebasNeue Bold";
+	font-size: 28px;
+	position: absolute;
+	left: 139px;
+	top: 74px;
+	text-align: center;
+	line-height: 29px;
+}
+#djez {
+	width: 58%;
+	height: 168px;
+}
+#djez span{
+	font-family: "BebasNeue Bold";
+	font-size: 37px;
+	position: absolute;
+	left: 217px;
+	top: 73px;
+	text-align: center;
+	line-height: 29px;
+}
+#mob {display: none;}
+#mob img {
+    width: 100%;
+    }
+@media screen and (max-width: 768px)
+{
+  #cat_prod {display: none;}
+}
+@media screen and (max-width: 768px)
+{
+  #mob {display: block;}
+}
