@@ -19,21 +19,15 @@ if (! defined('DIAFAN'))
 	}
 	include $path.'/includes/404.php';
 }
-$k=0;
+
 if(empty($result['rows'])) return false;
+
+        echo '<div class="flexStart shop-list">';
 
 		foreach ($result['rows'] as $row)
 		{
 
-			//if ($k == 3){
-			//echo '</div><div class="row text-center">';
-			echo '</div>';
-			echo '<div>';
-			//$k=0;
-			//}
-
-
-			echo '<div class="js_shop col-md-4 col-sm-4 col-xs-6 text-center" ><div class="thumbnail">';
+			echo '<div class="js_shop text-center thumbnail" >';
 
 			//вывод названия и ссылки на товар
 			echo '<div class="shops-title"><a href="'.BASE_PATH_HREF.$row["link"].'" class="shop-item-title">'.$row["name"].'</a></div>';
@@ -87,45 +81,12 @@ if(empty($result['rows'])) return false;
 			}
 
 
-
-			echo '<div class="caption">';
-
-
 			//рейтинг товара
 			if (!empty($row["rating"]))
 			{
 				echo ' '.$row["rating"];
 			}
 
-			//вывод краткого описания товара
-			// if (!empty($row["anons"]))
-			// {
-			// 	echo '<div class="shop_anons">'.$this->htmleditor($row['anons']).'</div>';
-			// }
-
-			//вывод производителя
-			// if (!empty($row["brand"]))
-			// {
-			// 	echo '<div class="shop_brand">';
-			// 	echo $this->diafan->_('Производитель').': ';
-			// 	echo '<a href="'.BASE_PATH_HREF.$row["brand"]["link"].'">'.$row["brand"]["name"].'</a>';
-			// 	echo '</div>';
-			// }
-
-			//вывод артикула
-			// if (!empty($row["article"]))
-			// {
-			// 	echo '<div class="shop_article">';
-			// 	echo $this->diafan->_('Артикул').': ';
-			// 	echo '<span class="shop_article_value">'.$row["article"].'</span>';
-			// 	echo '</div>';
-			// }
-
-			//вывод параметров товара
-			// if (empty($result['search']) && !empty($row["param"]))
-			// {
-			// 	echo $this->get('param', 'shop', array("rows" => $row["param"], "id" => $row["id"]));
-			// }
 
 			//вывод скидки на товар
 			if (!empty($row["discount"]))
@@ -139,25 +100,12 @@ if(empty($result['rows'])) return false;
 				echo $row["tags"];
 			}
 
-
-
             if(empty($result['search'])) {
-				//вывод кнопки "Купить"
 				echo $this->get('buy_form', 'shop', array("row" => $row, "result" => $result));
-
-                // if(empty($result["hide_compare"]))
-                // {
-                //     echo $this->get('compare_form', 'shop', $row);
-                // }
             }
-
-
 
             echo '</div>';
 
-			echo '</div></div>';
-
-			$k++;
-
 		}
 
+		echo '</div>';

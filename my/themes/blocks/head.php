@@ -11,6 +11,6 @@
 <link rel="stylesheet" href="<insert name="path">custom/my/css/growl.css">
 <link rel="stylesheet" href="<insert name="path">custom/my/css/jquery.kladr.min.css">
 <link rel="stylesheet" href="<insert name="path">custom/my/css/simple.css">
-<link href="<insert name="path">custom/my/css/style.css?v=1" type="text/css"  rel="stylesheet" />
+<link href="<insert name="path">custom/my/css/style.css?v=2" type="text/css"  rel="stylesheet" />
 <link href="<insert name="path">custom/my/css/main_category.css" type="text/css"  rel="stylesheet" />
 <link href="<insert name="path">custom/my/css/main_category_mob.css" type="text/css"  rel="stylesheet" />

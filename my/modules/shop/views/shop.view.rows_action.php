@@ -24,7 +24,7 @@ if(empty($result['rows'])) return false;
 
 		foreach ($result['rows'] as $row)
 		{
-			echo '<div class="js_shop item"><div class="thumbnail">';
+			echo '<div class="js_shop item thumbnail">';
 
 			//вывод названия и ссылки на товар
 			echo '<div class="h3"><a href="'.BASE_PATH_HREF.$row["link"].'" class="shop-item-title">'.$row["name"].'</a></div>';
@@ -142,6 +142,6 @@ if(empty($result['rows'])) return false;
 
             echo '</div>';
 
-			echo '</div></div>';
+			echo '</div>';
 		}
 
