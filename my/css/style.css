@@ -1196,13 +1196,23 @@ a.subscribe-button {
     height: auto;
 }
 
+.clauses_list img {
+    max-width: 100%;
+    height: auto;
+}
+
+.shop_old_price {
+    display: block;
+    line-height: 1;
+}
+
 @media screen and (max-width: 760px){
     .clauses_list .block, .shop-list .js_shop {
         width: calc(100% / 2 - 20px);
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 350px){
     .clauses_list .block, .shop-list .js_shop {
         width: calc(100% - 20px);
     }

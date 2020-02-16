@@ -67,13 +67,13 @@ if ($result["row"]["price_arr"])
 			$param_code .= ' image_id="'.$price["image_rel"].'"';
 		}
 		echo '<div class="js_shop_param_price shop_param_price shop-item-price"'.$param_code.'>';
-			echo '<span class="title">'.$this->diafan->_('Цена').': </span><span class="price"><span class="js_shop_price" summ="'.$price["price_no_format"].'">'.$price["price"].'</span> '.$result["result"]["currency"];
+			echo '<span class="price"><span class="js_shop_price" summ="'.$price["price_no_format"].'">'.$price["price"].'</span> '.$result["result"]["currency"];
 			if (!empty($price["old_price"]))
 			{
 				echo '<span class="shop_old_price price-old"><span class="shop_price_value strike">'.$price["old_price"].' '.$result["result"]["currency"].'</span></span>';
 			}
             else {
-                echo '<div class="shop_old_price">&nbsp;</div>';
+                //echo '<div class="shop_old_price">&nbsp;</div>';
             }
 			if (! $price["count"] && empty($hide_submit) || empty($price["price_no_format"]) && ! $result['result']["buy_empty_price"])
 			{

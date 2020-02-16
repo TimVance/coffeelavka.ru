@@ -102,7 +102,7 @@ if ($result["row"]["price_arr"])
 			}
 		}
 		echo '</div>';
-		echo '<div class="shop_price">' . $this->diafan->_('Цена') . ': <span class="shop_price_value">' . $price["price"] . '</span> <span class="shop_price_currency">' . $result["result"]["currency"] . '</span></div>';
+		echo '<div class="shop_price"> <span class="shop_price_value">' . $price["price"] . '</span> <span class="shop_price_currency">' . $result["result"]["currency"] . '</span></div>';
 		if (!empty($price["old_price"]))
 		{
 			echo '<div class="shop_old_price">' . $this->diafan->_('Старая цена') . ': <span class="shop_price_value">' . $price["old_price"] . '</span>'
