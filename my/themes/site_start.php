@@ -305,18 +305,7 @@ src="https://www.facebook.com/tr?id=289602335231970&ev=PageView
 	</div>
 </div>
 
-<!-- LightWidget WIDGET -->
-<!--script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script-->
-<!--iframe src="//lightwidget.com/widgets/2d5b26f75c6050019a50a523da2325c2.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe-->
-	<!-- LightWidget WIDGET -->
-	<!--script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script-->
-	<!--iframe src="//lightwidget.com/widgets/41a69cfa6bea54c1a3bf694c846507bf.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe-->
-
-
-<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/4fbf262543835b968c8d0cdd15d21b21.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-
-
-
+    <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/4fbf262543835b968c8d0cdd15d21b21.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
 
 </div>
 	<insert name="show_include" file="footer">
