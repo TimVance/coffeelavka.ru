@@ -19,7 +19,7 @@
 <!--						<a  href="/"><img class="img-responsive" src="<insert name="path">custom/my/img/logo_img.png" alt=""></a>-->
 <!--					</div>-->
 					<div class="navbar-search hidden-lg hidden-md hidden-sm" style="margin-right:10px;">
-						<a href="/"><img style="height:35px;" class="img-responsive" src="<insert name="path">custom/my/img/logo-coffeelavka.png" alt=""></a>
+						<a href="/"><img style="height:35px;" class="img-responsive" src="<insert name="path">custom/my/img/logo.svg" alt=""></a>
 					</div>
 			<div class="navbar-phone" style="margin-top:5px;"><a style="padding:0;" href="tel:+74952209815"><i style="font-size: 18px;" class="fa fa-phone" aria-hidden="true"></i></a></div>					
 			<div class="navbar-search" style="margin-top:5px;"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" aria-expanded="false"><i class="fa fa-search" aria-hidden="true" style="font-size: 18px;" ></i></button></div>
@@ -77,7 +77,7 @@
 <!--						<a href="/"><img class="img-responsive" src="<insert name="path">custom/my/img/logo_img.png" alt=""></a>-->
 <!--					</div>-->
 
-					<a href="/"><img class="img-responsive" src="<insert name="path">custom/my/img/logo-coffeelavka.png" alt=""></a>
+					<a href="/"><img class="img-responsive" src="<insert name="path">custom/my/img/logo.svg" alt=""></a>
 
 				</div>
 
