@@ -1217,3 +1217,34 @@ a.subscribe-button {
         width: calc(100% - 20px);
     }
 }
+
+.privacy_policy {
+    position: fixed;
+    z-index: 998;
+    bottom: 0px;
+    width: 100%;
+    min-width: 320px;
+    /* max-height: 72px; */
+    padding: 10px 5px 12px 0px;
+    font-size: 100%;
+    letter-spacing: 1px;
+    font: 12px/15px clear;
+    color: #fff;
+    background-color: #222;
+    text-align: center;
+}
+
+.privacy_policy .button {
+    color: #FFF;
+    border: 2px solid #FFF;
+    font-size: 12px;
+    padding: 3px 10px;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+
+.privacy_policy a {
+    color: #fff;
+    text-decoration: underline;
+}
