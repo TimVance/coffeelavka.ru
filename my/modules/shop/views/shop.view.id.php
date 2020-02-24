@@ -20,6 +20,10 @@ if (! defined('DIAFAN'))
 	include $path.'/includes/404.php';
 }
 
+echo '<pre style="display: none">';
+print_r($result["measure_unit"]);
+echo '</pre>';
+
 echo '<div class=" js_shop_id js_shop shop shop_id shop-item-container">';
 
 
