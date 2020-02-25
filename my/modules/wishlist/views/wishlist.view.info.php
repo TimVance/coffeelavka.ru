@@ -20,4 +20,4 @@ if (! defined('DIAFAN'))
 	include $path.'/includes/404.php';
 }
 
-echo $result["count"];
+if (!empty($result["count"])) echo $result["count"];

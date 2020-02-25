@@ -111,7 +111,7 @@ if ($result["row"]["price_arr"])
 
 		if (! $price["count"] || empty($price["price_no_format"]) && ! $result['result']["buy_empty_price"] || $result["row"]["no_buy"])
 		{
-			echo '<div class="js_shop_no_buy shop_no_buy">' . $this->diafan->_('Товар временно отсутствует') . '</div>';
+			echo '<div class="js_shop_no_buy shop_no_buy">' . $this->diafan->_('Товар ожидается') . '</div>';
 			echo '
 			<div class="js_shop_waitlist shop_waitlist">
 				'.$this->diafan->_('Сообщить когда появится на e-mail').'

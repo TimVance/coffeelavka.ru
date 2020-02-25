@@ -24,6 +24,6 @@ if (! defined('DIAFAN'))
 }
 
 echo '<a href="'.$result["link"].'" class="top-line-item">'
-.'<i class="fa fa-heart"></i> В избранное '
+.'<i class="fa fa-heart"></i> Избранное '
 .'<span id="show_wishlist"> '.$this->get('info', 'wishlist', $result).'</span>'
 .'</a>';

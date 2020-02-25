@@ -40,7 +40,7 @@ echo '
 
 if ($result["row"]["no_buy"] || empty($result["row"]["count"]))
 {
-	echo '<div class="js_shop_no_buy js_shop_no_buy_good shop_no_buy shop_no_buy_good text-danger">'.$this->diafan->_('Товар временно отсутствует').'</div>';
+	echo '<div class="js_shop_no_buy js_shop_no_buy_good shop_no_buy shop_no_buy_good text-danger">'.$this->diafan->_('Товар ожидается').'</div>';
 	$hide_submit = true;
 	$waitlist = true;
 }
@@ -67,14 +67,14 @@ if ($result["row"]["price_arr"])
 			$param_code .= ' image_id="'.$price["image_rel"].'"';
 		}
 		echo '<div class="js_shop_param_price shop_param_price shop-item-price"'.$param_code.'>';
-			echo '<span class="title"><span class="price"><span class="js_shop_price" summ="'.$price["price_no_format"].'">'.$price["price"].'</span> '.$result["result"]["currency"];
+			echo '<span class="title"><span class="price"><span class="js_shop_price" summ="'.$price["price_no_format"].'">'.$price["price"].'</span> '.$result["result"]["currency"].(!empty($result["result"]["measure_unit"]) ?  ' / '.$result["result"]["measure_unit"] : '');
 			if (!empty($price["old_price"]))
 			{
 				echo '<span class="shop_old_price price-old"><span class="shop_price_value strike">'.$price["old_price"].' '.$result["result"]["currency"].'</span></span>';
 			}
 			if (! $price["count"] && empty($hide_submit) || empty($price["price_no_format"]) && ! $result['result']["buy_empty_price"])
 			{
-				echo '<span class="js_shop_no_buy shop_no_buy">'.$this->diafan->_('Товар временно отсутствует').'</span>';
+				echo '<span class="js_shop_no_buy shop_no_buy">'.$this->diafan->_('Товар ожидается').'</span>';
 				$waitlist = true;
 			}
 			echo '</span>';

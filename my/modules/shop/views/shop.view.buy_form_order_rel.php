@@ -39,7 +39,7 @@ echo '
 <input type="hidden" name="action" value="'.$action.'">';
 if ($result["row"]["no_buy"] || empty($result["row"]["count"]))
 {
-	echo '<div class="js_shop_no_buy js_shop_no_buy_good shop_no_buy shop_no_buy_good">'.$this->diafan->_('Товар временно отсутствует').'</div>';
+	echo '<div class="js_shop_no_buy js_shop_no_buy_good shop_no_buy shop_no_buy_good">'.$this->diafan->_('Товар ожидается').'</div>';
 	$hide_submit = true;
 	$waitlist = true;
 }

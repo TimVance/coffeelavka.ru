@@ -771,13 +771,16 @@ label.input-title {
 .tabrow {
     margin-top: 20px;
 }
-a.js_shop_wishlist {
-    color: #555;
+a.js_shop_wishlist .fa {
+    color: #f5ce01;
     transition: all .3s;
 }
-a.js_shop_wishlist.active {
+a.js_shop_wishlist.active .fa {
+    color: red;
+}
+a.js_shop_wishlist:hover {
     color: #555;
-    background-color: #f5ce01;
+    text-decoration: underline;
 }
 .thumbnail .js_cart_one_click.cart_one_click {
     display: none!important;
@@ -1251,8 +1254,11 @@ a.subscribe-button {
     text-decoration: underline;
 }
 
-@media screen and (min-width: 980px) {
-    .wishlist-buttons {
-        float: right;
-    }
+.ya-share2 {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.wishlist-buttons {
+    margin-top: 10px;
 }

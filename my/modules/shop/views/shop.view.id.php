@@ -147,21 +147,14 @@ echo '<div class="col-md-6 description-product">';
 		//кнопка "Купить"
 		echo $this->get('buy_form_id', 'shop', array("row" => $result, "result" => $result));
 
-        echo '<div class="row">';
-            echo '<div class="col-md-6">';
-                echo $this->htmleditor('<insert name="show_social_links">');
-            echo '</div>';
-            echo '<div class="col-md-6">';
-
-                echo '<div class="btn-group wishlist-buttons">
-                        <a class="js_shop_wishlist shop_wishlist shop-like btn btn-default'.(! empty($result["wish"]) ? ' active' : '').'" >
-                            <i class="fa fa-heart"></i> Добавить в избранное
-                        </a>
-                      </div>
-                    ';
-
-            echo '</div>';
-        echo '</div>';
+        echo $this->htmleditor('<insert name="show_social_links">');
+        echo '<div class="btn-group wishlist-buttons">
+                <a class="js_shop_wishlist shop_wishlist shop-like'.(! empty($result["wish"]) ? ' active' : '').'" >
+                    <i class="fa fa-heart"></i> Добавить в избранное
+                </a>
+              </div>
+              <hr>
+            ';
 
 	echo '</div>';
 
