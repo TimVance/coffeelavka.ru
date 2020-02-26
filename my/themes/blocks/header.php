@@ -41,12 +41,9 @@
 				<insert name="show_block" module="menu" id="1" template="topmenu">
 				<a class="hidden-lg hidden-md hidden-sm" href="/user/avtorizatsiya/">Вход и регистрация</a>
 								<div class="dropdown show call_back hidden-lg hidden-md hidden-sm" style="height:35px;margin:10px 0;">
-					<a class="bdropdown-toggle main-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<a class="bdropdown-toggle main-link mobile-call-back" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				   	Обратный звонок
 				   </a>
-					<div class="dropdown-menu panel-body">
-						<insert name="show_form" module="feedback" site_id="35">
-			      </div>
 				</div>
 				<ul class="nav navbar-nav ">
 					<li>
@@ -96,9 +93,6 @@
 					<a class="bdropdown-toggle main-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				   	обратный звонок
 				   </a>
-					<div class="dropdown-menu panel-body">
-						<insert name="show_form" module="feedback" site_id="35">
-			      </div>
 				</div>
 			</div>
 			<div class="hidden-sm col-md-2 hidden-md hidden-xs">

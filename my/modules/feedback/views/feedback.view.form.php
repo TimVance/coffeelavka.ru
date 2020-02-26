@@ -27,7 +27,8 @@ if (! empty($result["text"]))
 }
 
 echo '
-<div class="feedback_form">
+<div class="feedback_form modal-feedback_form">
+<div class="closedmodal">x</div>
 <form method="POST" enctype="multipart/form-data" action="" class="ajax">
 <input type="hidden" name="module" value="feedback">
 <input type="hidden" name="action" value="add">
@@ -36,11 +37,10 @@ echo '
 <input type="hidden" name="tmpcode" value="'.md5(mt_rand(0, 9999)).'">';
 
 
-//заголовок блока
-// if (! empty($result["name"]))
-// {
-// 	echo '<h3>'.$result["name"].'</h3>';
-// }
+ if (! empty($result["name"]))
+ {
+ 	echo '<h4>'.$result["name"].'</h4>';
+ }
 
 $required = false;
 if (! empty($result["rows"]))
@@ -60,8 +60,7 @@ if (! empty($result["rows"]))
 				break;
 
 			case 'text':
-				echo '<label>'.$row["name"].($row["required"] ? '<span style="color:red;">*</span>' : '').':</label>
-				<input type="text" class="form-control" name="p'.$row["id"].'" value="">';
+				echo '<input type="text" class="form-control" name="p'.$row["id"].'" value="" placeholder="'.$row["name"].($row["required"] ? '*' : '').'">';
 				break;
 
 			case "email":
@@ -70,13 +69,11 @@ if (! empty($result["rows"]))
 				break;
 
 			case "phone":
-				echo '<label class="infofield">'.$row["name"].($row["required"] ? '<span style="color:red;">*</span>' : '').':</label>
-				<input type="tel" class="form-control" name="p'.$row["id"].'" value="">';
+				echo '<input type="tel" class="form-control" name="p'.$row["id"].'" value="" placeholder="'.$row["name"].($row["required"] ? '*' : '').'">';
 				break;
 
 			case 'textarea':
-				echo '<label class="infofield">'.$row["name"].($row["required"] ? '<span style="color:red;">*</span>' : '').':</label>
-				<textarea class="form-control" name="p'.$row["id"].'" cols="66" rows="10"></textarea>';
+				echo '<textarea class="form-control" name="p'.$row["id"].'" cols="66" rows="3" placeholder="'.$row["name"].($row["required"] ? '*' : '').'"></textarea>';
 				break;
 
 			case 'date':
@@ -93,7 +90,7 @@ if (! empty($result["rows"]))
 				break;
 
 			case 'checkbox':
-				echo '<input name="p'.$row["id"].'" id="feedback_p'.$row["id"].'" value="1" type="checkbox" ><label for="feedback_p'.$row["id"].'">'.$row["name"].($row["required"] ? '<span style="color:red;">*</span>' : '').'</label>';
+				echo '<input checked name="p'.$row["id"].'" id="feedback_p'.$row["id"].'" value="1" type="checkbox" >';
 				break;
 
 			case 'select':
@@ -147,13 +144,13 @@ if (! empty($result["rows"]))
 
 //Защитный код
 echo $result["captcha"];
-
+echo '<br >';
 //Кнопка Отправить
 echo '<input type="submit" value="'.$this->diafan->_('Отправить', false).'" class="btn btn-warning btn-sm">';
 
 if($required)
 {
-	echo '<div class="required_field"><span style="color:red;">*</span> — '.$this->diafan->_('Поля, обязательные для заполнения').'</div>';
+	//echo '<div class="required_field"><span style="color:red;">*</span> — '.$this->diafan->_('Поля, обязательные для заполнения').'</div>';
 }
 
 echo '</form>';

@@ -44,6 +44,8 @@
 	</div>
 </footer>
 </div>
+<div class="bgmodal"></div>
+<insert name="show_form" module="feedback" site_id="35">
 <insert name="show_privacy" hash="false" text="">
 <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter34974455 = new Ya.Metrika({ id:34974455, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/34974455?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
@@ -85,6 +87,14 @@
         setCookie("privacy_close", "true", {secure: true, 'max-age': 1209600});
         $(".privacy_policy").remove();
     }
+    $(function() {
+        $(".call_back.show, .mobile-call-back").click(function() {
+            $(".modal-feedback_form, .bgmodal").fadeIn();
+        });
+        $(".bgmodal, .closedmodal").click(function () {
+            $(".modal-feedback_form, .bgmodal").fadeOut();
+        });
+    });
 </script>
 </body>
 </html>

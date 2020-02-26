@@ -1262,3 +1262,73 @@ a.subscribe-button {
 .wishlist-buttons {
     margin-top: 10px;
 }
+
+.modal-feedback_form {
+    display: none;
+    position: fixed;
+    max-width: 360px;
+    width: 90%;
+    background-color: #fff;
+    padding: 30px 20px;
+    top: 50%;
+    left: 50%;
+    z-index: 12;
+    border-radius: 5px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.15);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,.15);
+    box-shadow: 1px 1px 1px rgba(0,0,0,.15);
+}
+
+.bgmodal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.9);
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 11;
+}
+
+.closedmodal {
+    float: right;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.closedmodal:hover {
+    color: #f5ce01;
+}
+
+.feedback_form_param16 .feedback_form_param_text {
+    display: inline;
+    padding-left: 5px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.modal-feedback_form .error_message, .modal-feedback_form .error {
+    color: #a94442;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.modal-feedback_form .form-group {
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+.modal-feedback_form h4 {
+    text-align: center;
+}
+
+.modal-feedback_form .btn {
+    margin: auto;
+    display: block;
+}
