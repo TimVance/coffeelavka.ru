@@ -105,6 +105,7 @@
         var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
     })(window,document,'https://cdn-ru.bitrix24.ru/b13036432/crm/site_button/loader_2_t4vp1g.js');
 </script>
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 

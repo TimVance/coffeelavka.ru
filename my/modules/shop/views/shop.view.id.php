@@ -39,7 +39,7 @@ if (!empty($result["img"]))
 		switch ($img["type"])
 		{
 			case 'animation':
-				echo '<a class="js_shop_img shop-item-image'.(empty($k) ? ' active' : '').'" href="'.BASE_PATH.$img["link"].'" rel="prettyPhoto[gallery'.$result["id"].'shop]" style="background-image:url('.BASE_PATH.$img["link"].')" image_id="'.$img["id"].'">';
+				echo '<a class="js_shop_img shop-item-image'.(empty($k) ? ' active' : '').'" href="'.BASE_PATH.$img["link"].'" data-fancybox="gallery" style="background-image:url('.BASE_PATH.$img["link"].')" image_id="'.$img["id"].'">';
 				break;
 			case 'large_image':
 				echo '<a class="js_shop_img shop-item-image'.(empty($k) ? ' active' : '').'" href="'.BASE_PATH.$img["link"].'" rel="large_image" width="'.$img["link_width"].'" height="'.$img["link_height"].'" style="background-image:url('.BASE_PATH.$img["link"].')" image_id="'.$img["id"].'">';
@@ -249,4 +249,4 @@ if (! empty($result["previous"]) || ! empty($result["next"]))
 
 }
 echo '</ul>';
-
+?>

@@ -1237,6 +1237,7 @@ a.subscribe-button {
     color: #fff;
     background-color: #222;
     text-align: center;
+    line-height: 2;
 }
 
 .privacy_policy .button {
@@ -1257,10 +1258,6 @@ a.subscribe-button {
 .ya-share2 {
     display: inline-block;
     margin-right: 20px;
-}
-
-.wishlist-buttons {
-    margin-top: 10px;
 }
 
 .modal-feedback_form {
@@ -1331,4 +1328,35 @@ a.subscribe-button {
 .modal-feedback_form .btn {
     margin: auto;
     display: block;
+}
+
+.share-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.share-wrapper:hover .share-id-icons {
+    opacity: 1;
+    visibility: visible;
+}
+
+.share-id-icons {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    opacity: 0;
+    width: 190px;
+    visibility: hidden;
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
 }
