@@ -792,7 +792,11 @@ a.js_shop_wishlist:hover {
     display: none!important;
 }
 .thumbnail .shop_waitlist {
-    display: none!important;
+    //display: none!important;
+    font-size: 12px;
+}
+.thumbnail .shop_waitlist p {
+    margin: 0;
 }
 .thumbnail .shop_additional_cost {
     display: none!important;
