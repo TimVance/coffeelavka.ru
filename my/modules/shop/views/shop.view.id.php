@@ -20,10 +20,6 @@ if (! defined('DIAFAN'))
 	include $path.'/includes/404.php';
 }
 
-echo '<pre style="display: none">';
-print_r($result["measure_unit"]);
-echo '</pre>';
-
 echo '<div class=" js_shop_id js_shop shop shop_id shop-item-container">';
 
 
@@ -104,14 +100,13 @@ echo '<div class="col-md-6 description-product">';
 		//краткое описание товара
 		if (!empty($result["anons"]))
 		{
-		echo '<b>Описание:</b>
-		<div class="shop_text">'.$this->htmleditor($result['anons']).'</div>';
+		echo '<div class="shop_text">'.$this->htmleditor($result['anons']).'</div>';
 		}
 
 		//параметры товара
 		if (!empty($result["param"]))
 		{
-			echo '<hr><b>Характеристики:</b><br>'.$this->get('param', 'shop', array("rows" => $result["param"], "id" => $result["id"])).'<hr>';
+			echo '<hr>'.$this->get('param', 'shop', array("rows" => $result["param"], "id" => $result["id"])).'<hr>';
 		}
 
 
