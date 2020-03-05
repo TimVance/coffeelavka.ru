@@ -23,24 +23,24 @@ if (! defined('DIAFAN'))
 	include $path.'/includes/404.php';
 }
 
-// echo '<div class="shop_block_coupon row">';
-// if($result["coupon"])
-// {
-//     echo $this->diafan->_('Вы активировали купон.');
-// }
-// else
-// {
-//     echo '<form method="post" action="" class="js_shop_form shop_form ajax">
-//     <input type="hidden" name="action" value="add_coupon">
-//     <input type="hidden" name="form_tag" value="'.$result["form_tag"].'">
-//     <input type="hidden" name="module" value="shop"> <div class="col-md-4">
-//     '.$this->diafan->_('Код купона на скидку').'
-//    <div class="input-group">
-//     <input type="text" value="" class="form-control" name="coupon">
-//     <span class="input-group-btn">
-//     <input type="submit" class="btn btn-danger btn-danger_mod " value="Активировать">
-//     </span></div></div>
-//     <div class="errors error"'.($result["error"] ? '>'.$result["error"] : ' style="display:none">').'</div>
-//     </form>';
-// }
-// echo '</div><br>';
+ echo '<div class="shop_block_coupon">';
+ if($result["coupon"])
+ {
+     echo $this->diafan->_('Вы активировали купон.');
+ }
+ else
+ {
+     echo '<form method="post" action="" class="js_shop_form shop_form ajax">
+     <input type="hidden" name="action" value="add_coupon">
+     <input type="hidden" name="form_tag" value="'.$result["form_tag"].'">
+     <input type="hidden" name="module" value="shop"> <div>
+     '.$this->diafan->_('Код купона на скидку').'
+    <div class="input-group">
+     <input type="text" value="" class="form-control" name="coupon">
+     <span class="input-group-btn">
+     <input type="submit" class="btn btn-danger btn-danger_mod " value="Активировать">
+     </span></div></div>
+     <div class="errors error"'.($result["error"] ? '>'.$result["error"] : ' style="display:none">').'</div>
+     </form>';
+ }
+ echo '</div><br>';

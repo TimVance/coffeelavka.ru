@@ -1364,3 +1364,13 @@ a.subscribe-button {
     -o-transition: all .3s;
     transition: all .3s;
 }
+
+.input-group-btn .btn {
+    background: #FFCE00;
+    border-color: #FFCE00 !important;
+    color: #555;
+}
+
+.shop_block_coupon {
+    max-width: 320px;
+}
