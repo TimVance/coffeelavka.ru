@@ -26,7 +26,7 @@ if (! defined('DIAFAN'))
  echo '<div class="shop_block_coupon">';
  if($result["coupon"])
  {
-     echo $this->diafan->_('Вы активировали купон.');
+     echo '<div style="color:green">'.$this->diafan->_('Вы активировали промокод.').'</div>';
  }
  else
  {
@@ -34,13 +34,12 @@ if (! defined('DIAFAN'))
      <input type="hidden" name="action" value="add_coupon">
      <input type="hidden" name="form_tag" value="'.$result["form_tag"].'">
      <input type="hidden" name="module" value="shop"> <div>
-     '.$this->diafan->_('Код купона на скидку').'
     <div class="input-group">
-     <input type="text" value="" class="form-control" name="coupon">
+     <input type="text" value="" class="form-control" name="coupon" placeholder="Ввести промокод">
      <span class="input-group-btn">
      <input type="submit" class="btn btn-danger btn-danger_mod " value="Активировать">
      </span></div></div>
-     <div class="errors error"'.($result["error"] ? '>'.$result["error"] : ' style="display:none">').'</div>
+     <div style="color: red" class="errors error"'.($result["error"] ? '>'.$result["error"] : ' style="display:none">').'</div>
      </form>';
  }
  echo '</div><br>';
