@@ -1374,3 +1374,7 @@ a.subscribe-button {
 .shop_block_coupon {
     max-width: 320px;
 }
+
+.cart_table .cart_old_price {
+    display: none;
+}
