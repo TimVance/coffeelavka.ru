@@ -375,7 +375,7 @@ class Wait_admin extends Frame_admin
                 background-color: #fff;
             }</style>';
 
-		$this->diafan->list_row();
+        $this->diafan->list_row();
 	}
 
 	/**
