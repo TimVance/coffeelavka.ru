@@ -888,8 +888,7 @@ class Images_editor extends Diafan
 <link href="'.BASE_PATH.'css/jquery.formstyler.css" rel="stylesheet" type="text/css" media="all">
 <link href="'.BASE_PATH.'adm/css/main.css" rel="stylesheet" type="text/css">
 <!--[if lt IE 9]><script src="//yandex-st.ru/jquery/1.10.2/jquery.min.js"></script><![endif]-->
-<!--[if gte IE 9]><!-->
-	<script type="text/javascript" src="//yandex-st.ru/jquery/2.0.3/jquery.min.js" charset="UTF-8"><</script><!--<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script src="//tiny-mce.ru/4/tinymce.plugin.min.js"></script>
 

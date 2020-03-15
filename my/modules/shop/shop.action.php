@@ -327,8 +327,11 @@ class Shop_action extends Action
 		{
 			DB::query("INSERT INTO {shop_waitlist} (good_id, mail, param, created, user_id, lang_id) VALUES (%d,  '%h', '%s', %d, %d, %d)", $good_id, $_POST["mail"], $params, time(), $this->diafan->_users->id, _LANG);
 		}
+
         Custom::inc('includes/mail.php');
-        send_mail(EMAIL_CONFIG, "Добавлена запись в список ожидания", "Почта пользователя: ".$_POST["mail"]);
+        $mail = "coffeelavka@list.ru";
+        send_mail($mail, "Добавлена запись в список ожидания", "Почта пользователя: ".$_POST["mail"]);
+
 		$this->result["errors"]["waitlist"] = $this->diafan->_('Спасибо! Мы уведомим Вас когда товар поступит на склад.', false);
 	}
 

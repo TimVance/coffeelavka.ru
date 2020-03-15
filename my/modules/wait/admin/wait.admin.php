@@ -346,25 +346,20 @@ class Wait_admin extends Frame_admin
 	 */
 	public function show()
 	{
-
         $list = DB::query_fetch_all("
-            SELECT w.mail AS mail, s.[name] AS name,
-            u.fio AS fio, w.id AS id
+            SELECT w.mail AS mail, s.[name] AS name, w.id AS id
             FROM {shop_waitlist} AS w
             RIGHT JOIN {shop} AS s ON w.good_id=s.id
-            RIGHT JOIN {users} AS u ON w.user_id=u.id
             WHERE w.trash='0' ORDER BY w.id ASC");
         echo '<table>';
         echo '<tr>';
             echo '<td class="item__th">ID</td>';
-            echo '<td class="item__th">ФИО</td>';
             echo '<td class="item__th">Товар</td>';
             echo '<td class="item__th">Почта</td>';
         echo '</tr>';
         foreach ($list as $item) {
             echo '<tr class="item_wrap">';
                 echo '<td>'.$item["id"].'</td>';
-                echo '<td>'.$item["fio"].'</td>';
                 echo '<td>'.$item["name"].'</td>';
                 echo '<td>'.$item["mail"].'</td>';
             echo '</tr>';
@@ -375,7 +370,7 @@ class Wait_admin extends Frame_admin
                 background-color: #fff;
             }</style>';
 
-        $this->diafan->list_row();
+        //$this->diafan->list_row();
 	}
 
 	/**

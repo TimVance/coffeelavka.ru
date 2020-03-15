@@ -29,7 +29,7 @@ echo '
 		<th class="cart_count">'.$this->diafan->_('Количество').'</th>';
 		if($result["discount"])
 		{
-			echo '<th class="cart_old_price">'.$this->diafan->_('Цена со скидкой').', '.$result["currency"].'</th>';
+			//echo '<th class="cart_old_price">'.$this->diafan->_('Цена со скидкой').', '.$result["currency"].'</th>';
 		}
 		echo '
 		<th class="cart_price">'.$this->diafan->_('Цена').', '.$result["currency"].'</th>';
@@ -82,7 +82,7 @@ if (! empty($result["rows"]))
 			<td class="js_cart_count cart_count"><nobr>'.(empty($result["hide_form"]) ? ' <span class="js_cart_count_minus cart_count_minus">-</span> <input type="text" class="number" value="'.$row["count"].'" min="0" name="editshop'.$row["id"].'" size="2"> <span class="js_cart_count_plus cart_count_plus">+</span> ' : $row["count"]).'</nobr></td>';
             if($result["discount"])
 			{
-				echo '<td class="cart_price">'.$row["price"].'</td>';
+				//echo '<td class="cart_price">'.$row["price"].'</td>';
 			    echo '<td class="cart_old_price">'.($row["old_price"] ? $row["old_price"] : '').'</td>';
 			    echo '<td class="cart_discount">'.($row["discount"] ? $row["discount"] : '').'</td>';
 			}
