@@ -49,7 +49,7 @@ if (! empty($result["delivery"]))
 		echo '
 		<tr class="js_check_delivery '.($row["id"] == $result["cart_delivery"] ? ' delivery_active' : '').'">
 			<td colspan="'.($result["discount"] ? 6 : 4).'" class="cart_delivery">
-				<div class="cart_delivery_name">'.$row["name"].'</div>
+				<div class="cart_delivery_name">'.$row["name"].($row["id"] == 6 ? $this->htmleditor('<insert name="show_block" id="13" module="site">') : '').'</div>
 				'.(empty($result["hide_form"]) ? '<div class="delivery_text_wrapper"><span class="show_detail js_open_delivery_modal" data-id="delivery_modal_'.$row['id'].'">Подробнее</span><div id="delivery_modal_'.$row['id'].'" class="cart_delivery_text">'.$row['text'].'</div></div>' : '').'
 			</td>
 			<td class="cart_summ">'.$row["price"].'

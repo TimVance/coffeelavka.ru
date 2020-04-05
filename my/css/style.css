@@ -1378,3 +1378,20 @@ a.subscribe-button {
 .cart_table .cart_old_price {
     //display: none;
 }
+
+.pickpoint-link {
+    text-decoration: underline;
+    display: inline-block;
+    vertical-align: -6px;
+    margin-left: 10px;
+}
+
+.pickpoint_logo {
+    margin: 10px 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.order_form_param14 {
+    display: none;
+}

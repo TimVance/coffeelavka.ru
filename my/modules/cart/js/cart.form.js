@@ -147,3 +147,9 @@ $(document).on('click', '.js-prev-step', function(e) {
 		}
 	}
 });
+function postamats(result) {
+	console.log(result);
+	$(".postamat-result").text(result["address"]);
+	let text = 'Номер постамата: ' + result["id"] + "; Адрес: " + result["address"];
+	$(".order_form_param14 textarea").val(text);
+}
