@@ -1386,6 +1386,13 @@ a.subscribe-button {
     margin-left: 10px;
 }
 
+@media screen and (max-width: 420px) {
+    .pickpoint-link {
+        display: block;
+        margin: 0;
+    }
+}
+
 .pickpoint_logo {
     margin: 10px 0;
     display: inline-block;
