@@ -10,11 +10,12 @@ diafan_ajax.before['mainfilter_get'] = function(form) {
 }
 
 diafan_ajax.success['mainfilter_get'] = function(form, response){
-    //var k = 0;
-    console.log(response);
+    var k = 0;
+    //console.log(response);
     $(".mainfilter-catalog").html(prepare(response.data));
     if (response.js) {
         $('body').append(prepare(response.js));
+        console.log(response.js);
     }
     return false;
 }

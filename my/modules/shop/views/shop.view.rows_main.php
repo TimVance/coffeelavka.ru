@@ -101,7 +101,7 @@ if(empty($result['rows'])) return false;
 			}
 
             //if(empty($result['search'])) {
-				echo $this->get('buy_form', 'shop', array("row" => $row, "result" => $result));
+				echo $this->get('buy_form_main', 'shop', array("row" => $row, "result" => $result));
             //}
 
             echo '</div>';

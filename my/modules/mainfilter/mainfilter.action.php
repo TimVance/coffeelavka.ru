@@ -34,7 +34,7 @@ class Mainfilter_action extends Action
         $shop->result["ajax"] = true;
         $this->result["data"] = $this->diafan->_tpl->get('list_search_main', 'shop', $shop->result);
         $this->result["result"] = 'success';
-        //$this->result["js"] = '<script src="'.BASE_PATH.File::compress(Custom::path('modules/shop/js/shop.buy_form.js'), 'js').'" type="text/javascript" charset="UTF-8"></script>';
+        //$this->result["js"] = '<script src="'.BASE_PATH.File::compress(Custom::path('modules/shop/js/shop.buy_form_main.js'), 'js').'" type="text/javascript" charset="UTF-8"></script>';
     }
 
 }
