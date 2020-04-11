@@ -1395,3 +1395,48 @@ a.subscribe-button {
 .order_form_param14 {
     display: none;
 }
+
+/** mainfilter **/
+
+.mainfilter-wrapper {
+    margin-bottom: 20px;
+}
+
+.mainfilter-param {
+    width: 25%;
+}
+
+.mainfilter-param-title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mainfilter-element span {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 1px 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.mainfilter-element span {
+    font-weight: normal;
+}
+
+.mainfilter-element span:hover,
+.mainfilter-element input:checked + span {
+    background-color: #f5ce01;
+}
+
+.mainfilter-element input {
+    display: none;
+}
+
+/** mainfilter **/
