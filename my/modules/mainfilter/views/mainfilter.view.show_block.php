@@ -31,6 +31,7 @@ echo '<div class="mainfilter-wrapper">';
                     echo '</div>';
                 echo '</div>';
             }
+            echo '<div><input type="reset" value="Сбросить фильтр"></div>';
         echo '</div>';
     echo '</form>';
     echo '<div class="mainfilter-catalog"></div>';
