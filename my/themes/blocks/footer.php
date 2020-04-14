@@ -56,6 +56,8 @@
 <script src="<insert name="path">custom/my/js/main.js"></script>
 <script src="<insert name="path">custom/my/js/jquery.growl.js"></script>
 <script src="<insert name="path">custom/my/js/simple.js"></script>
+<script src="<insert name="path">custom/my/js/simple.js"></script>
+<script src="<insert name="path">custom/my/modules/shop/js/shop.buy_form_main.js"></script>
 <!--script src="<insert name="path">custom/my/js/jquery.kladr.min.js"></script-->
 <!--script src="<insert name="path">custom/my/js/kladr.js"></script-->
 <!--script src="<insert name="path">custom/my/js/lib/jquery-1.11.1.min.js"></script-->

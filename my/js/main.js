@@ -242,7 +242,7 @@ $(document).on("click",".js_shop_wishlist ",function(){
 // });
 
 
-$("input[action=buy]").click(function () {
+$(document).on("click", "input[action=buy]", function () {
 $.growl.warning({
   'title'  : "",
   'message': "Товар добавлен в корзину! ",

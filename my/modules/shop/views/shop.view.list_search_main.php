@@ -39,7 +39,7 @@ if (!empty($result["rows"]))
 	{
 		//echo $this->get('sort_block', 'shop', $result);
 	}
-
+    if (count($result["rows"]) > 0) echo '<div class="count-info">Найдено: '.count($result["rows"]).' шт.</div>';
 	echo '<div class="shop-pane row text-center column2">';
         $result['search'] = true;
         echo $this->get('rows_main','shop',$result);

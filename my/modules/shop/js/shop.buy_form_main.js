@@ -18,7 +18,7 @@ $(".js_shop_form, .shop_form").each(function() {
 	empty_param_price($(this));
 	select_param_price($(this));
 });
-$(".mainfilter-catalog input[action=buy]").click(function() {
+$(document).on("click", ".mainfilter-catalog input[action=buy]", function() {
 	$(this).parents('form').find('input[name=action]').val('buy');
 	$(this).parents('form').submit();
 });

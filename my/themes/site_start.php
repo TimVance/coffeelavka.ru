@@ -282,7 +282,7 @@ src="https://www.facebook.com/tr?id=289602335231970&ev=PageView
 <div class="logo_bottom">
 	<div class="pull-left">
 	<!--img src="<insert name="path">custom/my/img/logo_img.png" alt=""-->
-	<img src="img/instagram-logo.jpg" alt="">
+	<img src="/custom/my/img/instagram-logo.jpg" alt="">
 	<!--span class="inst_text">	
 		coffeelavka_ru
 	</span-->

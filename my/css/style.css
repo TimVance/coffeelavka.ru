@@ -1446,4 +1446,92 @@ a.subscribe-button {
     display: none;
 }
 
+.mainfilter-catalog {
+    opacity: 1;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.mainfilter-catalog.load {
+    opacity: .3;
+}
+
+.mainfilter-wrapper .buttons {
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.mainfilter-wrapper .buttons input {
+    margin: 5px 10px;
+    font-weight: normal;
+}
+
+.mainfilter-wrapper .buttons input:hover {
+    color: #fff;
+}
+
+.mainfilter-elements {
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 760px) {
+    .mainfilter-param {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mainfilter-param-title:after {
+        content: "";
+        display: inline-block;
+        vertical-align: 1px;
+        width: 8px;
+        height: 8px;
+        background-color: transparent;
+        margin-left: 5px;
+        border-right: 2px solid #333333;
+        border-top: 2px solid #333333;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }
+    .mainfilter-param.open .mainfilter-param-title:after {
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+
+    .mainfilter-param-title {
+        font-weight: normal;
+        text-transform: none;
+    }
+
+    .mainfilter-elements {
+        display: none;
+    }
+
+    .mainfilter-wrapper .buttons input {
+        margin: 5px 5px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .mainfilter-param {
+        width: 100%;
+    }
+}
+
 /** mainfilter **/

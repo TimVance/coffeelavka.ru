@@ -53,10 +53,6 @@ src="https://www.facebook.com/tr?id=289602335231970&ev=PageView
 	
 		<insert name="show_include" file="header">
 
-        <div class="container">
-            <insert name="show_block" module="mainfilter">
-        </div>
-
 			<div class="slides">
 				<div class="container">
 				<!-- <div id="owl-demo" class="owl-carousel owl-theme">
@@ -83,7 +79,13 @@ src="https://www.facebook.com/tr?id=289602335231970&ev=PageView
 			-->
 			</div>
 		</div>
-	
+
+
+            <div class="container">
+                <insert name="show_block" module="mainfilter">
+            </div>
+
+
 <!-- блок категорий главной страницы -->
 		<div class="content">
 			<div class="container 557">
@@ -286,7 +288,7 @@ src="https://www.facebook.com/tr?id=289602335231970&ev=PageView
 <div class="logo_bottom">
 	<div class="pull-left">
 	<!--img src="<insert name="path">custom/my/img/logo_img.png" alt=""-->
-	<img src="img/instagram-logo.jpg" alt="">
+        <img src="/custom/my/img/instagram-logo.jpg" alt="">
 	<!--span class="inst_text">	
 		coffeelavka_ru
 	</span-->
@@ -313,6 +315,3 @@ src="https://www.facebook.com/tr?id=289602335231970&ev=PageView
 
 </div>
 	<insert name="show_include" file="footer">
-
-
-<!--insert name="show_block" module="menu" id="2"-->
