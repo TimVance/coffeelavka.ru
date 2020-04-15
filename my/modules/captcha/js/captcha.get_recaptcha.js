@@ -15,6 +15,4 @@ function create_recaptcha(element_id)
 	Recaptcha.create(recaptcha_public_key, element_id, {theme : "clean"});
 }
 
-function onloadCallback() {
-	create_recaptcha($('.js_captcha, .captcha').last().find('div').first().attr("id"));
-}
+create_recaptcha($('.js_captcha, .captcha').last().find('div').first().attr("id"));

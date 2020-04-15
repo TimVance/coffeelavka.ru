@@ -12,7 +12,7 @@ if (! defined('DIAFAN'))
 }
 
 echo '<div class="mainfilter-wrapper">';
-    echo '<h2>Фильтр кофе</h2>';
+    echo '<br>'.$this->htmleditor('<insert name="show_block" id="14" module="site">');
     echo '<form method="post" action="'.BASE_PATH_HREF.'new/" class="js_mainfilter_form ajax">';
         echo '<input type="hidden" name="module" value="mainfilter">';
         echo '<input type="hidden" name="action" value="get">';
