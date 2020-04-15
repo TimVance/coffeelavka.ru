@@ -79,7 +79,9 @@ src="https://www.facebook.com/tr?id=289602335231970&ev=PageView
 			-->
 			</div>
 		</div>
-	
+
+        <insert name="show_block" module="mainfilter">
+
 <!-- блок категорий главной страницы -->
 		<div class="content">
 			<div class="container 557">

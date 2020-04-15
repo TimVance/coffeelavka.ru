@@ -1406,7 +1406,8 @@ a.subscribe-button {
 /** mainfilter **/
 
 .mainfilter-wrapper {
-    margin-bottom: 20px;
+    margin: 20px 0;
+    background-color: #f4f6f7;
 }
 
 .mainfilter-param {
