@@ -804,9 +804,6 @@ a.js_shop_wishlist:hover {
 .shop-item-price {
     margin-bottom: 10px;
 }
-.dn {
-    display: none;
-}
 .dropdown-menu_mod {
     padding-left: 0;
 }
@@ -826,6 +823,12 @@ a.bold_link {
 }
 .pstat {
     position: static!important;
+}
+.option-list-param select {
+    margin-left: 5px;
+}
+.option-list-param {
+    margin-bottom: 8px;
 }
 /*.btn-buys:before {    content: "\f07a";    font-family: 'FontAwesome';}*/
 
@@ -1401,6 +1404,18 @@ a.subscribe-button {
 
 .order_form_param14 {
     display: none;
+}
+
+.fancybox-bg {
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+
+.fancybox-button {
+    background: rgba(255, 255, 255, 0.6) !important;
+}
+
+.fancybox-button, .fancybox-button:link, .fancybox-button:visited {
+    color: #757575 !important;
 }
 
 /** mainfilter **/

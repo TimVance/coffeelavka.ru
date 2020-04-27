@@ -11,10 +11,10 @@
 
 
 
-$(".js_shop_depend_param, .shop_form .depend_param").change(function() {
+$(document).on('change', ".js_shop_depend_param, .shop_form .depend_param", function() {
 	select_param_price($(this).parents('form'));
 });
-$(".js_shop_form, .shop_form").each(function() {
+$(".mainfilter-catalog .js_shop_form, .mainfilter-catalog .shop_form").each(function() {
 	empty_param_price($(this));
 	select_param_price($(this));
 });
