@@ -106,7 +106,7 @@ if ($result["row"]["price_arr"])
 						{
 							if(! $select)
 							{
-								$select = '<div class="option-list-param">'.$param["name"].' <select name="param'.$param["id"].'" class="shop-dropdown inpselect'.($result["row"]["param_multiple"][$param["id"]][$value["id"]] == 'depend' ? ' depend_param js_shop_depend_param' : '').'">';
+								$select = '<div style="display: none" class="option-list-param">'.$param["name"].' <select name="param'.$param["id"].'" class="shop-dropdown inpselect'.($result["row"]["param_multiple"][$param["id"]][$value["id"]] == 'depend' ? ' depend_param js_shop_depend_param' : '').'">';
 							}
 
 							$select .= '<option value="'.$value["id"].'"'

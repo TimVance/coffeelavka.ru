@@ -1551,3 +1551,8 @@ a.subscribe-button {
 }
 
 /** mainfilter **/
+
+.js_shop_img.shop-item-image {
+    display: inline-block !important;
+    background-size: contain;
+}
