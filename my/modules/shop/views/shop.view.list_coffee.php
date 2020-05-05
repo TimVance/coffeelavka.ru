@@ -160,7 +160,7 @@ if (!empty($result["rows"]))
 	}
 
 	echo '<div class="row text-center shop-pane">';
-	    echo $this->get('rows', 'shop', $result);
+	    echo $this->get('rows_coffee', 'shop', $result);
     echo '</div>';
 }
 

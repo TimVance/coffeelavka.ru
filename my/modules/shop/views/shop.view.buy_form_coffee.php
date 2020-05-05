@@ -106,7 +106,7 @@ if ($result["row"]["price_arr"])
 						{
 							if(! $select)
 							{
-								$select = '<div '.($param["id"] == 34 ? '' : 'style="display:none;" ').'class="option-list-param">'.$param["name"].'<select name="param'.$param["id"].'" class="shop-dropdown inpselect'.($result["row"]["param_multiple"][$param["id"]][$value["id"]] == 'depend' ? ' depend_param js_shop_depend_param' : '').'">';
+								$select = '<div class="option-list-param">'.$param["name"].'<select name="param'.$param["id"].'" class="shop-dropdown inpselect'.($result["row"]["param_multiple"][$param["id"]][$value["id"]] == 'depend' ? ' depend_param js_shop_depend_param' : '').'">';
 							}
 
 							$select .= '<option value="'.$value["id"].'"'
@@ -176,7 +176,7 @@ if(! empty($waitlist))
 echo '<div class="row js_shop_buy shop_buy to-cart">';
 	if (empty($result["row"]['is_file']) && empty($hide_submit))
 	{
-		echo '<div style="display: none" class="col-md-12"><input type="number" autofocus min="1" value="1" name="count" class="number form-control" pattern="[0-9]+([\.|,][0-9]+)?" step="any"></div>';
+		echo '<div><input type="number" autofocus min="1" value="1" name="count" class="number form-control" pattern="[0-9]+([\.|,][0-9]+)?" step="any"></div>';
 	}
 	if(empty($hide_submit))
 	{

@@ -732,9 +732,10 @@ label.input-title {
 }
 .shops-title {
     padding: 5px 0;
-    //min-height: 60px;
-	 overflow: hidden;
-	 height: 80px;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    height: 50px;
 }
 .nav-stacked_mod a {
     padding-left: 30px!important;
@@ -789,7 +790,7 @@ a.js_shop_wishlist:hover {
     display: none!important;
 }
 .thumbnail .number {
-    display: none!important;
+    //display: none!important;
 }
 .thumbnail .shop_waitlist {
     //display: none!important;
@@ -1180,7 +1181,7 @@ a.subscribe-button {
 .clauses_list .block, .shop-list .js_shop {
     text-align: center;
     border: 1px solid #ddd;
-    width: calc(100% / 3 - 20px);
+    width: calc(100% / 2 - 20px);
     padding: 10px;
     -webkit-transition: border .3s;
     -moz-transition: border .3s;
@@ -1555,4 +1556,18 @@ a.subscribe-button {
 .js_shop_img.shop-item-image {
     display: inline-block !important;
     background-size: contain;
+}
+
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.photo-params > div {
+    width: 50%;
+}
+
+.photo-params .params {
+    text-align: left;
 }
