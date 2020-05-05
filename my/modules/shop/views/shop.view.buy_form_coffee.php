@@ -84,8 +84,12 @@ if ($result["row"]["price_arr"])
 		echo '</div>';
 	}
 
-	echo '<div class="addict-field row dn" >';
-		echo '<div class="js_shop_form_param shop_form_param col-md-12">';
+	//print_r($result["row"]["param_multiple"]);
+
+	echo '<div class="addict-parent">';
+
+	echo '<div class="addict-field addict-field-coffee" >';
+		echo '<div class="js_shop_form_param shop_form_param">';
 		foreach ($result["result"]["depends_param"] as $param)
 		{
 			if(! empty($result["row"]["param_multiple"][$param["id"]]))
@@ -106,7 +110,7 @@ if ($result["row"]["price_arr"])
 						{
 							if(! $select)
 							{
-								$select = '<div class="option-list-param">'.$param["name"].'<select name="param'.$param["id"].'" class="shop-dropdown inpselect'.($result["row"]["param_multiple"][$param["id"]][$value["id"]] == 'depend' ? ' depend_param js_shop_depend_param' : '').'">';
+								$select = '<div class="option-list-param option-list-param'.$param["id"].'">'.$param["name"].'<select name="param'.$param["id"].'" class="shop-dropdown inpselect'.($result["row"]["param_multiple"][$param["id"]][$value["id"]] == 'depend' ? ' depend_param js_shop_depend_param' : '').'">';
 							}
 
 							$select .= '<option value="'.$value["id"].'"'
@@ -173,35 +177,41 @@ if(! empty($waitlist))
 	</div>';
 }
 
-echo '<div class="row js_shop_buy shop_buy to-cart">';
+echo '<div class="js_shop_buy shop_buy to-cart">';
+    echo '<div class="buttons-wrapper">';
 	if (empty($result["row"]['is_file']) && empty($hide_submit))
 	{
-		echo '<div><input type="number" autofocus min="1" value="1" name="count" class="number form-control" pattern="[0-9]+([\.|,][0-9]+)?" step="any"></div>';
+		echo '<div><span class="do-minus"><</span><input type="text" autofocus min="1" value="1" name="count" class="number form-control" pattern="[0-9]+([\.|,][0-9]+)?" step="any"><span class="do-plus">></span></div>';
 	}
 	if(empty($hide_submit))
 	{
 		echo '
-		<p>
-			<input type="button" class="btn btn-warning btn-sm btn-buys" value="'.$this->diafan->_(' в корзину', false).'" action="buy">
-		</p>';
+		<div class="button-buy-coffee">
+			<input type="button" class="btn btn-warning btn-sm btn-buys" value="'.$this->diafan->_('В корзину', false).'" action="buy">
+		</div>';
 	}
-
+    echo '</div>';
 
 if(empty($hide_submit) && !empty($result["result"]["one_click"]))
 	{
-		echo '<button type="button" class="btn btn-default btn-default_mod" action="one_click" role="button" data-toggle="modal" data-target="#myModal"><i class="fa fa-hand-pointer-o"></i> купить в 1 клик</button></div><div style="clear:both;">';
-	}
-	echo '<div class="error"';
-	if (! empty($result["row"]["count_in_cart"]))
-	{
-		echo '>'.$this->diafan->_('В корзине %s шт.<br><a class="link_order" href="%s">Оформить</a>', true, $result["row"]["count_in_cart"], BASE_PATH_HREF.$result["result"]["cart_link"]);
-	}
-	else
-	{
-		echo ' style="display:none;">';
+		//echo '<button type="button" class="btn btn-default btn-default_mod" action="one_click" role="button" data-toggle="modal" data-target="#myModal"><i class="fa fa-hand-pointer-o"></i> купить в 1 клик</button></div><div style="clear:both;">';
 	}
 echo '</div>';
 echo '</div>';
+
+
+echo '<div class="error"';
+if (! empty($result["row"]["count_in_cart"]))
+{
+    echo '>'.$this->diafan->_('В корзине %s шт.<br><a class="link_order" href="%s">Оформить</a>', true, $result["row"]["count_in_cart"], BASE_PATH_HREF.$result["result"]["cart_link"]);
+}
+else
+{
+    echo ' style="display:none;">';
+}
+echo '</div>';
+
+
 echo '</form>';
 
 //форма быстрого заказа

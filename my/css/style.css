@@ -1564,10 +1564,145 @@ a.subscribe-button {
     flex-wrap: wrap;
 }
 
-.photo-params > div {
-    width: 50%;
+.photo-params .shop-photo {
+    width: 180px;
 }
 
 .photo-params .params {
     text-align: left;
+    width: calc(100% - 180px);
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.coffee-list .js_shop_buy {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.addict-field-coffee {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.button-buy-coffee {
+    position: relative;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.button-buy-coffee .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.button-buy-coffee input {
+    height: 30px;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+
+.buttons-wrapper input[type="text"] {
+    width: 30px;
+    height: 28px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc9;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.buttons-wrapper > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons-wrapper > div > span {
+    opacity: .7;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.buttons-wrapper > div > span:hover {
+    opacity: 1;
+}
+
+.addict-field-coffee .option-list-param {
+    margin: 0;
+}
+
+.addict-field-coffee select {
+    max-width: 100px;
+}
+
+.addict-field-coffee .shop_form_param {
+    font-size: 13px;
+}
+
+.addict-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.anons {
+    margin-bottom: 10px;
+}
+
+.weight-select span {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.weight-select span:hover,
+.weight-select span.active {
+    background-color: #F6BE00;
+    color: #fff;
+}
+
+.option-list-param5 {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .photo-params .params {
+        display: none;
+    }
+    .photo-params .shop-photo {
+        margin: auto;
+    }
+    .addict-parent {
+        display: block;
+    }
+}
+@media screen and (max-width: 400px) {
+    .buttons-wrapper > div:first-child,
+    .anons {
+        display: none;
+    }
 }

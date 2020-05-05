@@ -22,7 +22,7 @@ if (! defined('DIAFAN'))
 
 if(empty($result['rows'])) return false;
 
-        echo '<div class="flexStart shop-list">';
+        echo '<div class="flexStart shop-list coffee-list">';
 
 		foreach ($result['rows'] as $row)
 		{
@@ -108,6 +108,8 @@ if(empty($result['rows'])) return false;
                     else echo $this->htmleditor($row["anons"]);
                 echo '</div>';
             }
+
+            echo '<div class="weight-select"></div>';
 
 			//вывод скидки на товар
 			if (!empty($row["discount"]))
