@@ -127,6 +127,16 @@ $(document).ready(function(e) {
 $(document).on('click', '.js-next-step', function(e) {
 	var $accordion = $('.cart-accordion');
 	if ($accordion.hasClass('ui-accordion')) {
+
+		// Test PickPoint
+		let res = $(this).closest('.ui-accordion-content').find(".postamat-result");
+		if (res.length) {
+			if(res.text() == "") {
+				alert("Необходимо выбрать пункт выдачи PickPoint");
+				return false;
+			}
+		}
+
 		var steps = $accordion.find('.ui-accordion-content');
 		var currentStep = $(this).closest('.ui-accordion-content');
 		var currentStepNumber = steps.index(currentStep);
