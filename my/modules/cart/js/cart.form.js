@@ -130,7 +130,8 @@ $(document).on('click', '.js-next-step', function(e) {
 
 		// Test PickPoint
 		let res = $(this).closest('.ui-accordion-content').find(".postamat-result");
-		if (res.length) {
+		let type = res.closest('.js_check_delivery');
+		if (res.length && type.hasClass("delivery_active")) {
 			if(res.text() == "") {
 				alert("Необходимо выбрать пункт выдачи PickPoint");
 				return false;
