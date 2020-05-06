@@ -181,13 +181,13 @@ echo '<div class="js_shop_buy shop_buy to-cart">';
     echo '<div class="buttons-wrapper">';
 	if (empty($result["row"]['is_file']) && empty($hide_submit))
 	{
-		echo '<div><span class="do-minus"><</span><input type="text" autofocus min="1" value="1" name="count" class="number form-control" pattern="[0-9]+([\.|,][0-9]+)?" step="any"><span class="do-plus">></span></div>';
+		echo '<div style="display: none"><span class="do-minus"><</span><input type="text" autofocus min="1" value="1" name="count" class="number form-control" pattern="[0-9]+([\.|,][0-9]+)?" step="any"><span class="do-plus">></span></div>';
 	}
 	if(empty($hide_submit))
 	{
 		echo '
 		<div class="button-buy-coffee">
-			<input type="button" class="btn btn-warning btn-sm btn-buys" value="'.$this->diafan->_('В корзину', false).'" action="buy">
+			<input type="button" class="btn btn-warning btn-sm btn-buys" value="'.(!empty($result["row"]["count_in_cart"]) ? "+ 1 шт." : $this->diafan->_('В корзину', false)).'" action="buy">
 		</div>';
 	}
     echo '</div>';

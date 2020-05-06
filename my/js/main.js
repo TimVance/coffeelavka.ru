@@ -292,6 +292,7 @@ $("document").ready(function () {
     });
 
 
+
     // Выбор веса
     $(".addict-field-coffee select[name=param5] option").each(function () {
         let val = $(this).val();

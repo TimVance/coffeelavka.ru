@@ -21,6 +21,7 @@ $(".js_shop_form, .shop_form").each(function() {
 $("input[action=buy]").click(function() {
 	$(this).parents('form').find('input[name=action]').val('buy');
 	$(this).parents('form').submit();
+	$(this).val("+1 шт.");
 });
 $("input[action=wish]").click(function() {
 	$(this).parents('form').find('input[name=action]').val('wish');
