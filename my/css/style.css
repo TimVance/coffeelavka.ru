@@ -1689,20 +1689,22 @@ a.subscribe-button {
     display: none;
 }
 
-@media screen and (max-width: 700px) {
-    .photo-params .params {
-        display: none;
+@media screen and (max-width: 640px) {
+    .photo-params .shop-photo {
+        margin: auto;
+    }
+    .coffee-list .js_shop {
+        width: calc(100% - 20px);
     }
     .photo-params .shop-photo {
         margin: auto;
     }
-    .addict-parent {
-        display: block;
-    }
 }
-@media screen and (max-width: 400px) {
-    .buttons-wrapper > div:first-child,
-    .anons {
+@media screen and (max-width: 360px) {
+    .coffee-list .js_shop {
+        width: calc(100% - 20px);
+    }
+    .photo-params .params {
         display: none;
     }
 }
